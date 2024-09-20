@@ -81,6 +81,21 @@ const char getControlHTML[] PROGMEM = R"=====(
     <button onclick="stopCalibrate()">Stop Calibrate</button>
     <button onclick="processCalibration()">Process Calibration</button>
 
+      <br>
+      <br>
+
+    <h4>Default RAW Values</h4>
+    <p>Wet Value (Low): 2200</p>     
+    <p>Dry Value (High): 3800</p>
+    <p>
+    High Value means dry= 3800<br>
+    Low Value means wet=2000</p>
+    
+    
+    <br>
+    <br>
+    <br>
+
     <h2>Set Values</h2>
     <label for="wetValueLow">Wet Value (Low): </label>
     <input type="number" id="wetValueLow" placeholder="Enter wet value">
@@ -250,6 +265,17 @@ const char getControlHTML[] PROGMEM = R"=====(
     <input type="number" id="maxValue" placeholder="Enter wet value">
     <button onclick="updateSubmergedValueHigh()">Set wet Value</button>
 
+
+    <br>
+    <br>
+    <h4>Default RAW Values</h4>
+    <p>Min Value (Emerged): 1500</p>
+    <p>Max Value (Submerged): 2200</p>
+    <p>
+        0    to 1500 no water. 
+    2200 to 4095 overflow (full).
+    1900 to 2200 => 0% to 100%
+    </p>
       <br>
       <br>
       <br>
