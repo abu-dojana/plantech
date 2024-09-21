@@ -23,8 +23,8 @@ This project is an automated plant watering system built using an ESP32 microcon
 - Water level sensor
 - DHT11 temperature and humidity sensor
 - Water pump
-- Relay module
-- Power supply
+- L298N Motor Driver
+- 12V ~ 1A DC Power supply
 - Connecting wires
 
 ## Software Requirements
