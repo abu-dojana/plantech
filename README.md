@@ -74,4 +74,4 @@ Contributions to improve the project are welcome. Please fork the repository and
 ## Acknowledgments
 
 - Thanks to all contributors and open-source libraries used in this project.
-- Special thanks to the Arduino and ESP32 communities for their invaluable resources and support.
+- Special Thanks to educ8s.tv (https://youtu.be/aUSwEkJCIAA?si=2lvx7QNANX3AVBHA) for the idea of using webpage as Character in ESP32. 
