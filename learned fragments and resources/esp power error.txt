@@ -1,0 +1,47 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4604
+ho 0 tail 12 room 4
+load:0x40078000,len:15488
+load:0x40080400,len:4
+load:0x40080404,len:3180
+entry 0x400805b8
+E (157) esp_core_du=}���͡� Core dump data check failed:
+Calculated checksum='119c58e1'
+Image checksum='ffffffff'
+DHT11 test!
+Failed to read from DHT sensor!
+Guru Meditation Error: Core  1 panic'ed (Interrupt wdt timeout on CPU1). 
+
+Core  1 register dump:
+PC      : 0x400d5234  PS      : 0x00060635  A0      : 0x800d2d5e  A1      : 0x3ffb2020  
+A2      : 0x0000001b  A3      : 0x00000001  A4      : 0x3ffc178c  A5      : 0x3ffc1f64  
+A6      : 0x0000102e  A7      : 0x00000004  A8      : 0x3ff44000  A9      : 0x0000001f  
+A10     : 0x00000001  A11     : 0x00000000  A12     : 0x0000001b  A13     : 0x00060623  
+A14     : 0xb33fffff  A15     : 0xb33fffff  SAR     : 0x0000001b  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x4008429d  LEND    : 0x400842a5  LCOUNT  : 0x00000027  
+
+
+Backtrace: 0x400d5231:0x3ffb2020 0x400d2d5b:0x3ffb2050 0x400d198d:0x3ffb2070 0x400d1a6b:0x3ffb2090 0x400d1b04:0x3ffb21f0 0x400d1882:0x3ffb2220 0x400d192b:0x3ffb2250 0x400d4434:0x3ffb2270 0x4008a46d:0x3ffb2290
+
+
+Core  0 register dump:
+PC      : 0x400866aa  PS      : 0x00060135  A0      : 0x800d9ba1  A1      : 0x3ffbc5e0  
+A2      : 0x00000000  A3      : 0x400854a8  A4      : 0x00060120  A5      : 0x3f406380  
+A6      : 0x00000003  A7      : 0x00060023  A8      : 0x800d90e2  A9      : 0x3ffbc5a0  
+A10     : 0x00000000  A11     : 0x3ffbdd24  A12     : 0x3ffbdd24  A13     : 0x00000000  
+A14     : 0x00060120  A15     : 0x3ffbdd30  SAR     : 0x0000001d  EXCCAUSE: 0x00000006  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x400866a7:0x3ffbc5e0 0x400d9b9e:0x3ffbc600 0x40088d90:0x3ffbc620 0x4008a46d:0x3ffbc640
+
+
+
+
+ELF file SHA256: f6a439d11003971e
+
